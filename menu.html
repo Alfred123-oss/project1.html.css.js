@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">    
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/Logo1.png">
+
+</head>
+<body id="menu">
+    <div class="header">
+        <div class="logo">
+            <img src="images/Logo1.png" alt="">
+            <a href="index.html"><h1>Cafe<span class="cafename">Plus</span></h1></a>
+            <a href="index.html"><i class="fa fa-plus"></i></a>
+        </div>
+        <div class="nav">
+            <ul class="navlist">
+                <li><a class="home" href="index.html">HOME</a></li>
+                <li><a class="about" href="about.html">ABOUT</a></li>
+                <li><a class="menu" href="menu.html">MENU</a></li>
+                <li><a class="book" href="book.html">FEEDBACK</a></li>
+                <li><a class="contact" href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <div class="social">
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-facebook"></i>
+        </div>
+    </div>
+    <div class="menucontent">
+        <div class="shopping">
+            <div class="cart">
+                <i class="bi bi-cart"></i>
+                <div class="cartamount">0</div>
+            </div>
+        </div>
+        <div class="itemsmenu">
+            <!-- <h1 style="font-family: 'dancing script';font-size: 50px;text-align: center;">Menu</h1> -->
+           <div class="item1">
+                <img src="images/menu/americanoPhotoRoom.png" alt="">
+                <div class="data1">
+                    <p class="name">Americano</p>
+                    <p class="details">A confident union of powerful espresso and a hot water infusion</p>
+                    <select name="size" id="sizedropdown" onchange="updatePrice('pricedisplay1',this.value)">
+                        <option value="Small">Small</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Large">Large</option>
+                    </select>
+                    <p>
+                        <span  class="price" id="pricedisplay1">Ksh 250</span>
+
+                    </p>
+                </div>
+            </div>
+            <hr> 
+           <div class="item1">
+                <img src="images/menu/cappuccinoPhotoRoom.png" alt="">
+                <div class="data1">
+                    <p class="name">Cappuccino</p>
+                    <p class="details">A harmonious blend of robust espresso, silky steamed milk, and a cloud-like layer of foam</p>
+                    <select name="size" id="sizedropdown" onchange="updatePrice('pricedisplay2',this.value)">
+                        <option value="Small">Small</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Large">Large</option>
+                    </select>
+                    <p>
+                        <span  class="price" id="pricedisplay2">Ksh 250</span>
+
+                    </p>
+                </div>
+            </div> <hr> 
+           <div class="item1">
+                <img src="images/menu/espressoPhotoRoom.png" alt="">
+                <div class="data1">
+                    <p class="name">Espresso</p>
+                    <p class="details">A bold and concentrated coffee elixir crafted by harnessing the power of fine coffee beans and pressurized hot water</p>
+                    <select name="size" id="sizedropdown" onchange="updatePrice('pricedisplay3',this.value)">
+                        <option value="Small">Small</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Large">Large</option>
+                    </select>
+                    <p>
+                        <span  class="price" id="pricedisplay3">Ksh 250</span>
+                    </p>
+                    
+                </div>
+            </div> <hr> 
+           <div class="item1">
+                <img src="images/menu/macchiatoPhotoRoom.png" alt="">
+                <div class="data1">
+                    <p class="name">Macchiato</p>
+                    <p class="details">A masterpiece of espresso art adorned with a touch of creamy milk to add depth and intrigue</p>
+                    <select name="size" id="sizedropdown" onchange="updatePrice('pricedisplay4',this.value)">
+                        <option value="Small">Small</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Large">Large</option>
+                    </select>
+                    <p>
+                        <span  class="price" id="pricedisplay4">Ksh 250</span>
+                    </p>
+                    
+                </div>
+            </div> <hr> 
+           <div class="item1">
+                <img src="images/menu/mochaPhotoRoom.png" alt="">
+                <div class="data1">
+                    <p class="name">Mocha</p>
+                    <p class="details">An enchanting blend of invigorating espresso, velvety chocolate indulgence, and a luxurious stream of steamed milk</p>
+                    <select name="size" id="sizedropdown" onchange="updatePrice('pricedisplay5',this.value)">
+                        <option value="Small">Small</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Large">Large</option>
+                    </select>
+                    <p>
+                        <span  class="price" id="pricedisplay5">Ksh 250</span>
+                    </p>
+                    
+                </div>
+            </div> <hr> 
+           <div class="item1">
+                <img class="latte" src="images/menu/coffeelattePhotoRoom.png" alt="">
+                <div class="data1">
+                    <p class="name">Coffee Latte</p>
+                    <p class="details">A symphony of smooth espresso, creamy steamed milk, and a delicate crown of milk foam for a truly indulgent experience</p>
+                    <select name="size" id="sizedropdown" onchange="updatePrice('pricedisplay6',this.value)">
+                        <option value="Small">Small</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Large">Large</option>
+                    </select>
+                    <p>
+                        <span  class="price" id="pricedisplay6">Ksh 250</span>
+                    </p>
+                    
+                </div>
+            </div> <hr> 
+           <div class="item1">
+                <img src="images/menu/piccoloPhotoRoom2.png" alt="">
+                <div class="data1">
+                    <p class="name">Piccolo</p>
+                    <p class="details">A petite and powerful concoction featuring a concentrated ristretto shot harmonizing with perfectly steamed milk</p>
+                    <select name="size" id="sizedropdown" onchange="updatePrice('pricedisplay7',this.value)">
+                        <option value="Small">Small</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Large">Large</option>
+                    </select>
+                    <p>
+                        <span  class="price" id="pricedisplay7">Ksh 250</span>
+                    </p>
+                    
+                </div>
+            </div> <hr> 
+           <div class="item1">
+                <img src="images/menu/ristrettoPhotoRoom.png" alt="">
+                <div class="data1">
+                    <p class="name">Ristretto</p>
+                    <p class="details">A bold warrior's elixir created by extracting the full essence of mighty coffee beans with just a dash of hot water</p>
+                    <select name="size" id="sizedropdown" onchange="updatePrice('pricedisplay8',this.value)">
+                        <option value="Small">Small</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Large">Large</option>
+                    </select>
+                    <p>
+                        <span  class="price" id="pricedisplay8">ksh 250</span>
+                    </p>
+                </div>
+            </div> <hr> 
+           <div class="item1">
+                <img src="images/menu/affogatoPhotoRoom.png" alt="">
+                <div class="data1">
+                    <p class="name">Affogato</p>
+                    <p class="details">A dreamy dessert rendezvous where creamy vanilla meets a cascading torrent of hot espresso for an unforgettable taste sensation</p>
+                    <select name="size" id="sizedropdown" onchange="updatePrice('pricedisplay9',this.value)">
+                        <option value="Small">Small</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Large">Large</option>
+                    </select>
+                    <p>
+                        <span  class="price" id="pricedisplay9">Ksh 250</span>
+                    </p>
+                    
+                </div>
+            </div> 
+        </div>
+    </div>
+    
+<script src="main.js"></script>
+    
+</body>
+</html>
